@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form with Tailwind CSS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 h-screen flex flex-col">
+
+    <header class="bg-gray-800 text-white p-4 flex items-center">
+        <a href="#" class="mr-4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7" />
+            </svg>
+        </a>
+        <h1 class="text-lg font-semibold flex-grow text-center">ការជូនដំណឹង</h1>
+    </header>
+
+    <div class="flex-grow flex items-center justify-center p-4">
+        <div class="bg-white rounded-lg shadow-md p-6 w-full max-w-md">
+
+            <div class="space-y-4">
+                <div class="bg-gray-200 h-10 rounded-md"></div>
+                <div class="bg-gray-200 h-10 rounded-md"></div>
+                <div class="bg-gray-200 h-10 rounded-md"></div>
+                <div class="bg-gray-200 h-10 rounded-md"></div>
+                <div class="bg-gray-200 h-10 rounded-md"></div>
+                <div class="bg-gray-200 h-10 rounded-md"></div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
+</body>
+</html>
