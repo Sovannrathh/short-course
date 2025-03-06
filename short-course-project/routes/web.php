@@ -48,6 +48,10 @@ Route::get('/notification', function () {
     return view('notification');
 })->name('notification');
 
+Route::get('/dashboard', function () {
+    return view('./dashboard/admin');
+})->name('dashboard');
+
 Route::get('/test', function () {
     return view('test');
 });
