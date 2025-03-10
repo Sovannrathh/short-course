@@ -55,3 +55,26 @@ Route::get('/dashboard', function () {
 Route::get('/test', function () {
     return view('test');
 });
+Route::get('/coursevideo', function () {
+    return view('courses/coursevideo');
+})->name('coursevideo');
+
+Route::get('/page1', function () {
+    return view('courses/page1');
+})->name('page1');
+
+Route::get('/page2', function () {
+    return view('courses/page2');
+})->name('page2');
+
+Route::get('/quiz', function () {
+    return view('courses/quiz');
+})->name('quiz');
+
+Route::get('/coursepay', function () {
+    return view('courses/coursepay');
+})->name('coursepay');
+
+Route::get('/page3', function () {
+    return view('courses/page3');
+})->name('page3');

@@ -25,15 +25,18 @@
                 </a>
             </div>
             <div class="p-6">
-                <a href="#" class="block bg-yellow-500 p-4 rounded-md mb-4 flex items-center transition duration-300 shadow-md opacity-50 cursor-not-allowed">
+                <!-- Take the Quiz Button -->
+                <a href="#" class="block bg-yellow-500 p-4 rounded-md mb-4 flex items-center transition duration-300 shadow-md">
                     <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-4">
-                        <i data-lucide="lock" class="text-yellow-500"></i>
+                        <i data-lucide="book-open" class="text-yellow-500"></i>
                     </div>
                     <h3 class="text-lg font-semibold text-white">Take the Quiz</h3>
                 </a>
-                <a href="#" class="block bg-blue-500 p-4 rounded-md flex items-center transition duration-300 shadow-md opacity-50 cursor-not-allowed">
+                
+                <!-- View Documentation Button -->
+                <a href="#" class="block bg-blue-500 p-4 rounded-md flex items-center transition duration-300 shadow-md">
                     <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-4">
-                        <i data-lucide="lock" class="text-blue-500"></i>
+                        <i data-lucide="file-text" class="text-blue-500"></i>
                     </div>
                     <h3 class="text-lg font-semibold text-white">View Documentation</h3>
                 </a>
@@ -42,7 +45,7 @@
 
         <div class="mt-8 flex justify-end">
             <button class="bg-green-500 hover:bg-green-600 text-white font-semibold py-3 px-6 rounded-lg flex items-center shadow-lg transition duration-300">
-                <i data-lucide="credit-card" class="mr-2"></i> Make Payment
+                <i data-lucide="credit-card" class="mr-2"></i> next
             </button>
         </div>
     </div>
