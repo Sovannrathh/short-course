@@ -20,8 +20,8 @@ Route::get('/card', function () {
 Route::get('/success', function () {
     return view('/payment/success');
 });
-Route::get('/h', function () {
-    return view('homepage');
+Route::get('/', function () {
+    return view('mainpage');
 });
 
 Route::get('/coursepage', function () {
