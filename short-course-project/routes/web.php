@@ -52,9 +52,9 @@ Route::get('/notification', function () {
 Route::get('/dashboard', function () {
     return view('./dashboard/admin');
 })->name('dashboard');
-Route::view('/dashboard_course', './dashboard/course')->name('dashboard_course');
-Route::view('/dashboard_new_course', './dashboard/new_course')->name('dashboard_new_course');
-Route::get('/adminprofile', function () {
+Route::view('/dashboard/courses', './dashboard/course')->name('dashboard_course');
+Route::view('/dashboard/courses/new_course', './dashboard/new_course')->name('dashboard_new_course');
+Route::get('/dashboard/profile', function () {
     return view('./dashboard/admin_profile');
 })->name('dashboard_admin_profile');
 // .
@@ -65,16 +65,19 @@ Route::get('/adminprofile', function () {
 // .
 // Map_course 
 // .
-Route::get('/coursepage', function () {
+Route::get('/courses', function () {
     return view('courses/coursepage');
 })->name('showcourse');
 
-
-Route::get('/coursedetails', function () {
+Route::get('courses/coursedetails', function () {
     return view('courses/coursedetails');
 })->name('coursedetails');
 
-Route::get('/coursevideo', function () {
+Route::get('courses/coursepay', function () {
+    return view('courses/coursepay');
+})->name('coursepay');
+
+Route::get('courses/coursepay/coursevideo', function () {
     return view('courses/coursevideo');
 })->name('coursevideo');
 
@@ -86,13 +89,10 @@ Route::get('/page2', function () {
     return view('courses/page2');
 })->name('page2');
 
-Route::get('/quiz', function () {
+Route::get('courses/coursepay/quiz', function () {
     return view('courses/quiz');
 })->name('quiz');
 
-Route::get('/coursepay', function () {
-    return view('courses/coursepay');
-})->name('coursepay');
 
 Route::get('/page3', function () {
     return view('courses/page3');
