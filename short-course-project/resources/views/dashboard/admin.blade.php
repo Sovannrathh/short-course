@@ -14,14 +14,62 @@
         <!-- Sidebar -->
         <aside class="w-64 bg-yellow-400 p-5 space-y-4 hidden md:block">
             <h2 class="text-xl font-bold">ចុះឈ្មោះ</h2>
-            <ul class="space-y-2 border-cyan-300">
+            {{-- <ul class="space-y-2 border-cyan-300">
                 <li class="text-gray-800">📂 ផ្ទាំងគ្រប់គ្រង</li>
                 <li class="text-gray-800">📚 វគ្គសិក្សា</li>
                 <li class="text-gray-800">📜​ ផ្ទុកវីឌីអូ </li>
                 <li class="text-gray-800">📝 បង់ប្រាក់គ្រូ</li>
                 <li class="text-gray-800">📜 ប្រាក់សិស្សបង់</li>
+            </ul> --}}
+            <ul class="space-y-2">
+                <li class="opcion-con-desplegable">
+                    <div class="flex items-center justify-between p-2 hover:bg-gray-400">
+                        <div class="flex items-center">
+                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                📂 ផ្ទាំងគ្រប់គ្រង
+                            </a>
+                            {{-- <span>ផ្ទាំងគ្រប់គ្រង</span> --}}
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between p-2 hover:bg-gray-400">
+                        <div class="flex items-center">
+                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                📚 វគ្គសិក្សា
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between p-2 hover:bg-gray-400">
+                        <div class="flex items-center">
+                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                📜 ផ្ទុកវីឌីអូ
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between p-2 hover:bg-gray-400">
+                        <div class="flex items-center">
+                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                📝 ផ្ទាំងគ្រប់គ្រង
+                            </a>
+                        </div>
+                    </div>
+                    <div class="flex items-center justify-between p-2 hover:bg-gray-400">
+                        <div class="flex items-center">
+                            <a href="#" class="block p-2 hover:bg-gray-700 flex items-center">
+                                <i class="fas fa-chevron-right mr-2 text-xs"></i>
+                                📜 បង់ប្រាក់គ្រូ
+                            </a>
+                        </div>
+                    </div>
+
+            </ul>
+            </li>
             </ul>
         </aside>
+
 
         <!-- Main Content -->
         <div class="flex-1 flex flex-col">
@@ -45,14 +93,16 @@
                     </button>
                     <span>⚙️</span>
                     {{-- Profile button --}}
-                    <div class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                         <div
                             class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                             <!-- Profile dropdown -->
                             <div class="relative ml-3">
                                 <div>
                                     <form action="">
-                                        <button type="button" onclick="window.location.href='{{ route('dashboard_admin_profile') }}'"
+                                        <button type="button"
+                                            onclick="window.location.href='{{ route('dashboard_admin_profile') }}'"
                                             class="relative flex rounded-full bg-gray-800 text-sm focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden"
                                             id="user-menu-button" aria-expanded="false" aria-haspopup="true">
                                             <span class="absolute -inset-1.5"></span>
@@ -62,10 +112,10 @@
                                                 alt="">
                                         </button>
                                     </form>
-    
+
                                 </div>
                                 {{-- 1 --}}
-    
+
                             </div>
                         </div>
                     </div>
