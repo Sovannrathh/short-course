@@ -26,3 +26,9 @@
 </body>
 
 </html>
+{{-- . --}}
+{{-- ROUTE FOR QR  --}}
+{{-- . --}}
+{{-- Route::get('/qr', function () {
+    return view('/payment/qr');
+}); --}}

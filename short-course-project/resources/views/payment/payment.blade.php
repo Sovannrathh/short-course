@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script async
+                            src="https://js.stripe.com/v3/buy-button.js">
+                          </script>
+</script>
 </head>
 
 <body class="h-screen flex">
@@ -90,11 +94,20 @@
                         </div>
                         {{-- Button to submit the payment --}}
                         <div>
-                            <form action="{{ route('card') }}" method="GET">
+                            {{-- <form action="{{ route('card') }}" method="GET">
                                 <button name="hello" type="submit"
                                     class="mt-10 flex w-full justify-center rounded-md bg-yellow-500 px-3 py-1.5 text-sm/6 font-semibold text-black shadow-xs hover:bg-yellow-400 focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600">Pay
                                 </button>
-                            </form>
+                            </form> --}}
+                            
+                          
+                            
+                          
+                          <stripe-buy-button
+                            buy-button-id="buy_btn_1R1VOdGbn5BKJhTQJtUAfmrk"
+                            publishable-key="pk_test_51R1ToZGbn5BKJhTQIoLrvwMwHd67bwdVzB2cbkdGmw6jyvfP6Ig8jtmG938J0vP8wM9ESS6PnoBxbX3FzGEzTYHx00LjrcaqUp"
+                          >
+                          </stripe-buy-button>
                         </div>
 
                     </div>

@@ -9,10 +9,6 @@ Route::get('/payment', function () {
     return view('/payment/payment');
 })->name('payment');
 
-Route::get('/qr', function () {
-    return view('/payment/qr');
-});
-
 Route::get('/card', function () {
     return view('/payment/card');
 })->name('card');
@@ -51,6 +47,8 @@ Route::get('/notification', function () {
 Route::get('/dashboard', function () {
     return view('./dashboard/admin');
 })->name('dashboard');
+Route::view('/dashboard_course', './dashboard/course')->name('dashboard_course');
+Route::view('/dashboard_new_course', './dashboard/new_course')->name('dashboard_new_course');
 
 Route::get('/test', function () {
     return view('test');
