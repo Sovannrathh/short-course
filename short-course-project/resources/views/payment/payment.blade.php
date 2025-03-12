@@ -82,15 +82,15 @@
 
                         <div>
                             <label for="payment"
-                                class="mt-10 block text-sm/6 font-medium text-gray-900">Payment</label>
-                            <label class="flex items-center gap-2">
+                                class="mt-10 block text-sm/6 font-medium text-gray-900">Payment  Credut/Debut Card</label>
+                            {{-- <label class="flex items-center gap-2">
                                 <input type="radio" name="payment" value="qr" class="w-4 h-4">
                                 KHQR
-                            </label>
-                            <label class="flex items-center gap-2">
+                            </label> --}}
+                            {{-- <label class="flex items-center gap-2">
                                 <input type="radio" name="payment" value="card" class="w-4 h-4">
                                 Credit/Debit Card
-                            </label>
+                            </label> --}}
                         </div>
                         {{-- Button to submit the payment --}}
                         <div>
@@ -100,9 +100,6 @@
                                 </button>
                             </form> --}}
                             
-                          
-                            
-                          
                           <stripe-buy-button
                             buy-button-id="buy_btn_1R1VOdGbn5BKJhTQJtUAfmrk"
                             publishable-key="pk_test_51R1ToZGbn5BKJhTQIoLrvwMwHd67bwdVzB2cbkdGmw6jyvfP6Ig8jtmG938J0vP8wM9ESS6PnoBxbX3FzGEzTYHx00LjrcaqUp"
