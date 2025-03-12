@@ -30,10 +30,10 @@
                         <td>Price:</td>
                         <td>10 USD</td>
                     </tr>
-                    <tr>
+                    {{-- <tr>
                         <td>Discount:</td>
                         <td>20%</td>
-                    </tr>
+                    </tr> --}}
                     <tr>
                         <td>Total:</td>
                         <td>8 USD</td>
@@ -61,7 +61,7 @@
                         </div>
                     </div>
 
-                    <div>
+                    {{-- <div>
                         <div class="mt-10 flex items-center justify-between">
                             <label for="phonenum" class="block text-sm/6 font-medium text-gray-900">Phone Number</label>
                         </div>
@@ -69,7 +69,7 @@
                             <input type="phonenum" name="phonenum" id="phonenum" autocomplete="current-phonenum"
                                 required
                                 class="block w-full rounded-md bg-white px-3 py-1.5 text-base text-gray-900 outline-1 -outline-offset-1 outline-gray-300 placeholder:text-gray-400 focus:outline-2 focus:-outline-offset-2 focus:outline-indigo-600 sm:text-sm/6">
-                        </div>
+                        </div> --}}
 
                         <div>
                             <label for="email" class="mt-10 block text-sm/6 font-medium text-gray-900">Email
