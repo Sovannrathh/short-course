@@ -57,13 +57,8 @@
                 <div class="sm:hidden" id="mobile-menu">
                     <div class="space-y-1 px-2 pt-2 pb-3">
                         <a href="#"
-                            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">គេហទំព័រ</a>
-                        <a href="#"
                             class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">វគ្គសិក្សា</a>
-                        <a href="#"
-                            class="block rounded-md px-3 py-2 text-base font-medium text-gray-300 hover:bg-gray-700 hover:text-white">ទំនាក់ទំនង</a>
                     </div>
-
                 </div>
     </nav>
     <!-- Main content area -->

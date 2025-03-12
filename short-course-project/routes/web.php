@@ -54,6 +54,9 @@ Route::get('/dashboard', function () {
 })->name('dashboard');
 Route::view('/dashboard_course', './dashboard/course')->name('dashboard_course');
 Route::view('/dashboard_new_course', './dashboard/new_course')->name('dashboard_new_course');
+Route::get('/adminprofile', function () {
+    return view('./dashboard/admin_profile');
+})->name('dashboard_admin_profile');
 // .
 // 
 // .
