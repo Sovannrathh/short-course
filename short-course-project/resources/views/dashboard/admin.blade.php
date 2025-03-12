@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <title>Dashboard</title>
 </head>
+
 <body class="bg-gray-100">
     <div class="flex h-screen">
         <!-- Sidebar -->
@@ -20,20 +22,32 @@
                 <li class="text-gray-800">📜 ប្រាក់សិស្សបង់</li>
             </ul>
         </aside>
-        
+
         <!-- Main Content -->
         <div class="flex-1 flex flex-col">
             <!-- Top Nav -->
             <nav class="bg-black text-white p-4 flex justify-between items-center">
-                <button class="md:hidden text-white text-2xl">☰</button> <!-- Mobile Menu Button -->
+                <button class="md:hidden text-white text-2xl">☰</button>
+                <!-- Mobile Menu Button -->
                 <input type="text" placeholder="Search" class="px-4 py-2 rounded-md text-black w-full md:w-auto" />
                 <div class="flex items-center space-x-4">
-                    <span>🔔</span>
+                    <button type="button" onclick="window.location.href='{{ route('notification') }}'"
+                        class="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800 focus:outline-hidden">
+
+                        <span class="absolute -inset-1.5"></span>
+                        <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                            aria-hidden="true" data-slot="icon">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 0 0 5.454-1.31A8.967 8.967 0 0 1 18 9.75V9A6 6 0 0 0 6 9v.75a8.967 8.967 0 0 1-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 0 1-5.714 0m5.714 0a3 3 0 1 1-5.714 0" />
+                        </svg>
+
+
+                    </button>
                     <span>⚙️</span>
                     <img src="https://via.placeholder.com/40" class="w-10 h-10 rounded-full" />
                 </div>
             </nav>
-                        
+
             <!-- Dashboard Content -->
             <div class="p-6 space-y-6">
                 <!-- Stats & Upcoming -->
@@ -50,7 +64,7 @@
                         </ul>
                     </div>
                 </div>
-                
+
                 <!-- Courses -->
                 <div>
                     <h3 class="text-lg font-bold">ថ្នាក់ដែលបានចុះឈ្មោះថ្មីៗ</h3>
@@ -127,8 +141,8 @@
                 scales: {
                     y: {
                         beginAtZero: true,
-                        min: 0,  
-                        max: 10  
+                        min: 0,
+                        max: 10
                     },
                     x: {
                         barPercentage: 1,
@@ -139,4 +153,5 @@
         });
     </script>
 </body>
+
 </html>
