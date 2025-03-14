@@ -17,14 +17,15 @@
             <div class="relative flex h-16 items-center justify-between">
                 <div class="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
                     <div class="flex shrink-0 items-center">
-                        <img class="h-8 w-auto"
-                            src="https://tailwindui.com/plus-assets/img/logos/mark.svg?color=indigo&shade=500"
-                            alt="Your Company">
+                        <a href="http://127.0.0.1:8000/courses"><img class="h-15 w-20" src="{{ asset('images/logo.png') }}"
+                                alt="Logo"></a>
                     </div>
-                    <div class="hidden sm:ml-6 sm:block">
-                        <div class="flex space-x-4"> 
+                    <div
+                        class="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                        <div class="flex space-x-4">
                             <a href="#"
-                                class="rounded-md px-3 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">វគ្គសិក្សា</a>                         
+                                class="rounded-md px-0 py-2 text-sm font-medium text-gray-300 hover:bg-gray-700 hover:text-white">វគ្គសិក្សា</a>
+
                         </div>
                     </div>
                 </div>
@@ -95,7 +96,7 @@
             <div class="block w-[300px] mx-5 rounded-lg bg-white shadow-lg dark:bg-neutral-700 text-center">
 
                 <!-- Card image -->
-                <a href="{{route('coursedetails')}}">
+                <a href="{{ route('coursedetails') }}">
                     <img class="rounded-t-lg" src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
                         alt="" />
                 </a>
@@ -136,7 +137,7 @@
             <div class="block w-[300px] mx-5 rounded-lg bg-white shadow-lg dark:bg-neutral-700 text-center">
 
                 <!-- Card image -->
-                <a href="{{route('coursedetails')}}">
+                <a href="{{ route('coursedetails') }}">
                     <img class="rounded-t-lg" src="https://tecdn.b-cdn.net/img/new/standard/nature/184.jpg"
                         alt="" />
                 </a>
