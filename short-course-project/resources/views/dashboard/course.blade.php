@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Courses Dashboard</title>
 </head>
+
 <body class="bg-gray-100 p-6">
 
     <!-- Header -->
@@ -31,622 +33,99 @@
             <button class="text-blue-600">Show filters</button>
         </div>
     </div>
-
-    <!-- Courses Grid -->
-    <div class="grid grid-cols-3 gap-6">
-        
-        <!-- Course Card -->
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 text-xs rounded">Free</span>
-            <span class="absolute top-2 right-2 bg-blue-600 text-white px-2 py-1 text-xs rounded">Published</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Introduction to Visual Design</h2>
-            <p class="text-gray-500 text-sm">Ramesh Verma | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-        </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-gray-700 text-white px-2 py-1 text-xs rounded">$126</span>
-            <span class="absolute top-2 right-2 bg-gray-500 text-white px-2 py-1 text-xs rounded">Draft</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Creative Writing: Unleashing Your Imagination</h2>
-            <p class="text-gray-500 text-sm">Olivia Green | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-        </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 text-xs rounded">Open</span>
-            <span class="absolute top-2 right-2 bg-orange-500 text-white px-2 py-1 text-xs rounded">Pending approval</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Beginner's Guide to Graphic Design</h2>
-            <p class="text-gray-500 text-sm">Ramesh Verma | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 text-xs rounded">Free</span>
-            <span class="absolute top-2 right-2 bg-blue-600 text-white px-2 py-1 text-xs rounded">Published</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Introduction to Visual Design</h2>
-            <p class="text-gray-500 text-sm">Ramesh Verma | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-        </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-gray-700 text-white px-2 py-1 text-xs rounded">$126</span>
-            <span class="absolute top-2 right-2 bg-gray-500 text-white px-2 py-1 text-xs rounded">Draft</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Creative Writing: Unleashing Your Imagination</h2>
-            <p class="text-gray-500 text-sm">Olivia Green | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-        </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 text-xs rounded">Open</span>
-            <span class="absolute top-2 right-2 bg-orange-500 text-white px-2 py-1 text-xs rounded">Pending approval</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Beginner's Guide to Graphic Design</h2>
-            <p class="text-gray-500 text-sm">Ramesh Verma | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 text-xs rounded">Free</span>
-            <span class="absolute top-2 right-2 bg-blue-600 text-white px-2 py-1 text-xs rounded">Published</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Introduction to Visual Design</h2>
-            <p class="text-gray-500 text-sm">Ramesh Verma | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-        </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-gray-700 text-white px-2 py-1 text-xs rounded">$126</span>
-            <span class="absolute top-2 right-2 bg-gray-500 text-white px-2 py-1 text-xs rounded">Draft</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Creative Writing: Unleashing Your Imagination</h2>
-            <p class="text-gray-500 text-sm">Olivia Green | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-        </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 text-xs rounded">Open</span>
-            <span class="absolute top-2 right-2 bg-orange-500 text-white px-2 py-1 text-xs rounded">Pending approval</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Beginner's Guide to Graphic Design</h2>
-            <p class="text-gray-500 text-sm">Ramesh Verma | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-        </div>
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-green-500 text-white px-2 py-1 text-xs rounded">Free</span>
-            <span class="absolute top-2 right-2 bg-blue-600 text-white px-2 py-1 text-xs rounded">Published</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Introduction to Visual Design</h2>
-            <p class="text-gray-500 text-sm">Ramesh Verma | 12 Jan 2023</p>
-
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-        </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-gray-700 text-white px-2 py-1 text-xs rounded">$126</span>
-            <span class="absolute top-2 right-2 bg-gray-500 text-white px-2 py-1 text-xs rounded">Draft</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Creative Writing: Unleashing Your Imagination</h2>
-            <p class="text-gray-500 text-sm">Olivia Green | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-                <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-
-            </td>
-            </tr>
-        </tbody>
+    <!-- Course Table -->
+    <div>
+        <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
+            <table class="w-full text-sm text-left rtl:text-right text-gray-500 dark:text-gray-400">
+                <thead class="text-xs text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+                    <tr>
+                        <th scope="col" class="px-6 py-3">
+                            Course ID
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Title
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Description
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Price
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Created By
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Created At
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Edit
+                        </th>
+                        <th scope="col" class="px-6 py-3">
+                            Delete
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr
+                        class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                        <th scope="row"
+                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            001
+                        </th>
+                        <td class="px-6 py-4">
+                            flutter
+                        </td>
+                        <td class="px-6 py-4">
+                            death
+                        </td>
+                        <td class="px-6 py-4">
+                            $2999
+                        </td>
+                        <td class="px-6 py-4">
+                            admin
+                        </td>
+                        <td class="px-6 py-4">
+                            Thu 13 Mar 4:54pm
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#"
+                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#"
+                                class="font-medium text-red-600 dark:text-red-500 hover:underline">Delete</a>
+                        </td>
+                    </tr>
+                    <tr
+                        class="odd:bg-white odd:dark:bg-gray-900 even:bg-gray-50 even:dark:bg-gray-800 border-b dark:border-gray-700 border-gray-200">
+                        <th scope="row"
+                            class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                            002
+                        </th>
+                        <td class="px-6 py-4">
+                            flutter
+                        </td>
+                        <td class="px-6 py-4">
+                            death
+                        </td>
+                        <td class="px-6 py-4">
+                            $2999
+                        </td>
+                        <td class="px-6 py-4">
+                            admin
+                        </td>
+                        <td class="px-6 py-4">
+                            Thu 13 Mar 4:54pm
+                        </td>
+                        <td class="px-6 py-4">
+                            <a href="#"
+                                class="font-medium text-blue-600 dark:text-blue-500 hover:underline">Edit</a>
+                        </td>
+                    </tr>
+                </tbody>
             </table>
         </div>
-
-        <div class="bg-white p-4 rounded-lg shadow-md relative">
-            <span class="absolute top-2 left-2 bg-yellow-500 text-white px-2 py-1 text-xs rounded">Open</span>
-            <span class="absolute top-2 right-2 bg-orange-500 text-white px-2 py-1 text-xs rounded">Pending approval</span>
-            <img src="https://via.placeholder.com/300" alt="Course" class="rounded-lg mb-4">
-            <h2 class="text-lg font-semibold">Beginner's Guide to Graphic Design</h2>
-            <p class="text-gray-500 text-sm">Ramesh Verma | 12 Jan 2023</p>
-            <table class="table-fixed w-full border border-gray-300 rounded-lg">
-    
-        <tbody class="text-gray-700 text-sm font-light">
-            <tr class="border-b border-gray-200 hover:bg-gray-100">
-                <td class="py-3 px-6 flex items-center space-x-10 bg-gray-200 text-gray-600 uppercase text-sm leading-normal">
-                    <!-- View -->
-                    <div class="flex items-center space-x-2">
-                        <svg class="w-5 h-5 text-blue-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12H9m6 4H9m6-8H9m3 12a9 9 0 100-18 9 9 0 000 18z" />
-                        </svg>
-                        <span>View</span>
-                    </div>
-
-            <!-- Edit -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-green-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11 4H6a2 2 0 00-2 2v12a2 2 0 002 2h12a2 2 0 002-2v-5" />
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.5 2.5a2.121 2.121 0 113 3L13 14l-4 1 1-4 8.5-8.5z" />
-                </svg>
-                <span>Edit</span>
-            </div>
-
-            <!-- Delete -->
-            <div class="flex items-center space-x-2 cursor-pointer hover:text-red-600">
-            <svg class="w-5 h-5 text-red-600" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
-            </svg>
-            <span class="text-gray-700">Delete</span>
-            </div>
-
-            <!-- More -->
-            <div class="flex items-center space-x-2">
-                <svg class="w-5 h-5 text-gray-500" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6h.01M12 12h.01M12 18h.01" />
-                </svg>
-                <span>More</span>
-            </div>
-
-            </td>
-            </tr>
-        </tbody>
-
-    </table>
-</div>
-
-</div>
-
+    </div>
 </body>
+
 </html>
