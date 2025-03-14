@@ -90,7 +90,8 @@
             </ul>
         </div>
         {{-- List of Course  --}}
-        <div class="grid grid-cols-4 gap-4 md:grid-rows-6">
+        <div class="flex justify-center">
+            <div class="grid grid-cols-4 gap-4 md:grid-rows-6">
             {{-- 1 --}}
             <!-- Card -->
             <div class="block w-[300px] mx-5 rounded-lg bg-white shadow-lg dark:bg-neutral-700 text-center">
@@ -335,6 +336,7 @@
 
             </div>
             <!-- Card 6 end-->
+        </div>
         </div>
     </main>
 
