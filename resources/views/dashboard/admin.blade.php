@@ -13,11 +13,31 @@
         <aside class="w-64 bg-yellow-400 p-5 space-y-4 hidden md:block">
             <h2 class="text-xl font-bold">ចុះឈ្មោះ</h2>
             <ul class="space-y-2 border-cyan-300">
-                <li class="text-gray-800">📂 ផ្ទាំងគ្រប់គ្រង</li>
-                <li class="text-gray-800">📚 វគ្គសិក្សា</li>
-                <li class="text-gray-800">📜​ ផ្ទុកវីឌីអូ </li>
-                <li class="text-gray-800">📝 បង់ប្រាក់គ្រូ</li>
-                <li class="text-gray-800">📜 ប្រាក់សិស្សបង់</li>
+                <div>
+                    <button onclick="changeColor('dashboardButton')" class="w-full text-left">
+                        <li id="dashboardButton" class="text-gray-800">📂 ផ្ទាំងគ្រប់គ្រង</li>
+                    </button>
+                </div>
+                <div>
+                    <button onclick="changeColor('courseButton')" class="w-full text-left">
+                        <li id="courseButton" class="text-gray-800">📚 វគ្គសិក្សា</li>
+                    </button>
+                </div>
+                <div>
+                    <button onclick="changeColor('uploadvideoButton')" class="w-full text-left">
+                        <li id="uploadvideoButton" class="text-gray-800">📜​ ផ្ទុកវីឌីអូ </li>
+                    </button>
+                </div>
+                <div>
+                    <button onclick="changeColor('paymentteacherButton')" class="w-full text-left">
+                        <li id="paymentteacherButton" class="text-gray-800">📝 បង់ប្រាក់គ្រូ</li>
+                    </button>
+                </div>
+                <div>
+                    <button onclick="changeColor('paymentstudentButton')" class="w-full text-left">
+                        <li id="paymentstudentButton" class="text-gray-800">📜 ប្រាក់សិស្សបង់</li>
+                    </button>
+                </div>
             </ul>
         </aside>
         
@@ -137,6 +157,18 @@
                 }
             }
         });
+
+        function changeColor(activeId) {
+            const buttons = ['dashboardButton', 'courseButton', 'uploadvideoButton', 'paymentteacherButton', 'paymentstudentButton'];
+            buttons.forEach(buttonId => {
+                const textElement = document.getElementById(buttonId);
+                if (buttonId === activeId) {
+                    textElement.classList.add('text-blue-500');
+                } else {
+                    textElement.classList.remove('text-blue-500');
+                }
+            });
+        }
     </script>
 </body>
 </html>

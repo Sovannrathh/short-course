@@ -36,11 +36,6 @@
                     <input type="number" class="block w-full mt-1 p-2 border border-gray-300 rounded" placeholder="0" required>
                 </label>
 
-                <label class="inline-flex items-center mb-4">
-                    <input type="checkbox" class="form-checkbox h-5 w-5 text-indigo-600" />
-                    <span class="ml-2 text-gray-700">This is a free course</span>
-                </label>
-
                 <button type="button" class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700" onclick="showNextForm()">Next</button>
             </form>
 
@@ -58,15 +53,13 @@
                         <input type="text" class="block w-full mt-1 p-2 border border-gray-300 rounded" placeholder="Public URL"/>
                     </label>
 
-                    <button type="submit" class="w-full bg-indigo-600 text-white py-2 rounded hover:bg-indigo-700">Upload</button>
+                    <div class="flex justify-between">
+                        <button type="button" class="bg-gray-300 text-gray-700 py-2 px-4 rounded hover:bg-gray-400" onclick="showPreviousForm()">Back</button>
+                        <button type="submit" class="bg-indigo-600 text-white p-2 rounded hover:bg-indigo-700">Upload</button>
+                    </div>
                 </form>
 
-                <div class="mt-4 text-center">
-                    <span class="text-gray-500">OR</span>
-                    <div class="mt-2">
-                        <button class="bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600">Import from Google Drive</button>
-                    </div>
-                </div>
+                
             </div>
         </div>
     </div>
@@ -75,6 +68,11 @@
         function showNextForm() {
             document.getElementById('courseForm').classList.add('hidden');
             document.getElementById('secondForm').classList.remove('hidden');
+        }
+
+        function showPreviousForm() {
+            document.getElementById('secondForm').classList.add('hidden');
+            document.getElementById('courseForm').classList.remove('hidden');
         }
 
         // Activate the modal on page load
