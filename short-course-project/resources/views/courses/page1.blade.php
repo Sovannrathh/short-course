@@ -16,7 +16,7 @@
 
     <!-- Course Overview Section -->
     <div class="max-w-5xl mx-auto py-16 px-6">
-        <a href="#" class="text-blue-600 text-lg font-medium hover:underline mb-8 inline-block">&larr; ត្រឡប់ទៅវិញ</a>
+        <a href="{{ route('coursevideo') }}" class="text-blue-600 text-lg font-medium hover:underline mb-8 inline-block">&larr; ត្រឡប់ទៅវិញ</a>
 
         <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <div class="relative">

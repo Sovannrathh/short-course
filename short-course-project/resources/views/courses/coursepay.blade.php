@@ -17,7 +17,7 @@
 
         <div class="bg-white rounded-lg shadow-lg overflow-hidden">
             <div class="relative group">
-                <a href="video.html" class="block">
+                <a href="{{ route('coursevideo') }}" class="block">
                     <img src="https://datascientest.com/en/files/2024/09/Data-Science-video.png" alt="Course Video" class="w-full h-auto group-hover:opacity-80 transition duration-300">
                     <div class="absolute inset-0 flex items-center justify-center bg-black bg-opacity-50 opacity-0 group-hover:opacity-100 transition duration-300">
                         <i data-lucide="play-circle" class="text-white text-6xl"></i>
@@ -32,7 +32,7 @@
                     </div>
                     <h3 class="text-lg font-semibold text-white">Take the Quiz</h3>
                 </a>
-                
+
                 <!-- View Documentation Button -->
                 <a href="#" class="block bg-blue-500 p-4 rounded-md flex items-center transition duration-300 shadow-md">
                     <div class="w-10 h-10 bg-white rounded-full flex items-center justify-center mr-4">
