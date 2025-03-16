@@ -9,14 +9,14 @@
 <body class="bg-gray-100 font-sans">
 
     <!-- Header Section -->
-    <div class="bg-yellow-500 p-8 text-center shadow-xl rounded-b-lg">
+    <div class="bg-yellow-500 p-6 text-center shadow-xl rounded-b-lg">
         <h1 class="text-4xl font-semibold text-white">កម្មវិធីសិក្សាតាមប្រព័ន្ធអនឡាញ</h1>
         <p class="mt-2 text-lg text-white opacity-80">ការយល់ដឹងអំពីមូលដ្ឋាននៃ Data Science</p>
     </div>
 
     <!-- Course Section -->
     <div class="max-w-3xl mx-auto py-16 px-6">
-        <a href="#" class="text-blue-600 text-lg font-medium hover:underline mb-8 inline-block">&larr; ទៅត្រឡប់</a>
+        <a href="{{ route('page1') }}" class="text-blue-600 text-lg font-medium hover:underline mb-8 inline-block">&larr; ទៅត្រឡប់</a>
 
         <!-- Course Overview Card -->
         <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
@@ -41,16 +41,15 @@
         </div>
 
         <div class="mt-12 flex justify-end">
+            <a href="{{ route('page3') }}">
             <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
                 បន្ត
             </button>
+        </a>
         </div>
     </div>
 
     <!-- Footer Section -->
-    <div class="bg-gray-900 text-white text-center py-6 mt-16">
-        <p class="text-sm">ផ្តល់ដោយ <a href="https://tailwindcss.com" target="_blank" class="text-yellow-400 hover:underline">Tailwind CSS</a></p>
-    </div>
 
 </body>
 </html>

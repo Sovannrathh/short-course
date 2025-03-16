@@ -39,16 +39,14 @@
         </div>
 
         <div class="mt-12 flex justify-end">
+            <a href="{{ route('page2') }}">
             <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
                 បន្ត
             </button>
+        </a>
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <div class="bg-gray-900 text-white text-center py-6 mt-16">
-        <p class="text-sm">បានអភិវឌ្ឍដោយ <a href="https://tailwindcss.com" target="_blank" class="text-yellow-400 hover:underline">Tailwind CSS</a></p>
-    </div>
 
 </body>
 </html>

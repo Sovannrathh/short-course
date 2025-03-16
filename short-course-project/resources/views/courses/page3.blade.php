@@ -61,8 +61,7 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <div class="bg-gray-900 text-white text-center py-6 mt-16">
+
 
     </div>
 
