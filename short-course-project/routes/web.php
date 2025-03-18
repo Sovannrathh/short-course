@@ -1,4 +1,5 @@
 <?php
+use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\View;
 use Illuminate\Support\Facades\Route;
 
@@ -100,3 +101,14 @@ Route::get('/page3', function () {
 // .
 // 
 // .
+// route::get('/dbconn', function () {
+//     return view('dbconn');
+// });
+// Route::get('/check-db', function () {
+//     try {
+//         $database = DB::connection()->getDatabaseName();
+//         return "Connected successfully to database: " . $database;
+//     } catch (\Exception $e) {
+//         return "An error occurred while connecting to the database: " . $e->getMessage();
+//     }
+// });
