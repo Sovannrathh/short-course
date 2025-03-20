@@ -22,11 +22,15 @@ Route::get('/success', function () {
 });
 // .
 //
+//
 // .
 Route::get('/', function () {
     return view('mainpage');
 });
 
+// Route::get('/test', function () {
+//     return view('test');
+// });
 // Route::get('/test', function () {
 //     return view('test');
 // });
