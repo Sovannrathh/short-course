@@ -16,7 +16,7 @@
 
     <!-- Course Overview Section -->
     <div class="max-w-5xl mx-auto py-16 px-6">
-        <a href="#" class="text-blue-600 text-lg font-medium hover:underline mb-8 inline-block">&larr; ត្រឡប់ទៅវិញ</a>
+        <a href="{{ route('coursevideo') }}" class="text-blue-600 text-lg font-medium hover:underline mb-8 inline-block">&larr; ត្រឡប់ទៅវិញ</a>
 
         <div class="bg-white rounded-lg shadow-xl overflow-hidden transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <div class="relative">
@@ -39,16 +39,14 @@
         </div>
 
         <div class="mt-12 flex justify-end">
+            <a href="{{ route('page2') }}">
             <button class="bg-yellow-500 hover:bg-yellow-600 text-white font-semibold py-3 px-8 rounded-lg shadow-lg transform transition duration-300 hover:scale-105">
                 បន្ត
             </button>
+        </a>
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <div class="bg-gray-900 text-white text-center py-6 mt-16">
-        <p class="text-sm">បានអភិវឌ្ឍដោយ <a href="https://tailwindcss.com" target="_blank" class="text-yellow-400 hover:underline">Tailwind CSS</a></p>
-    </div>
 
 </body>
 </html>

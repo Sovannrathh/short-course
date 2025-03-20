@@ -19,7 +19,7 @@
         <div class="bg-white rounded-lg shadow-xl overflow-hidden p-8 mb-8 transform transition duration-300 hover:scale-105 hover:shadow-2xl">
             <h2 class="text-3xl font-semibold mb-4 text-gray-800">បញ្ជូនអរគុណ!</h2>
             <p class="text-lg text-gray-600 mb-8">អ្នកបានបញ្ចប់មុខវិជ្ជានេះដោយជោគជ័យ។</p>
-            
+
             <div class="bg-green-100 p-6 rounded-lg shadow-md mb-8">
                 <h3 class="text-xl font-semibold text-green-600">ប្រើប្រាស់ជំនាញដែលអ្នករៀនបាន!</h3>
                 <p class="text-gray-700">បច្ចុប្បន្ននេះអ្នកមានជំនាញដើម្បីវិភាគទិន្នន័យ ដោយប្រើប្រាស់ឧបករណ៍ និងទស្សនៈថ្មីៗ។</p>
@@ -61,9 +61,8 @@
         </div>
     </div>
 
-    <!-- Footer Section -->
-    <div class="bg-gray-900 text-white text-center py-6 mt-16">
-        <p class="text-sm">Powered by <a href="https://tailwindcss.com" target="_blank" class="text-yellow-400 hover:underline">Tailwind CSS</a></p>
+
+
     </div>
 
 </body>

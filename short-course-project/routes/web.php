@@ -21,15 +21,15 @@ Route::get('/success', function () {
     return view('/payment/success');
 });
 // .
-// 
+//
 // .
 Route::get('/', function () {
     return view('mainpage');
 });
 
-Route::get('/test', function () {
-    return view('test');
-});
+// Route::get('/test', function () {
+//     return view('test');
+// });
 
 Route::get('/login', function () {
     return view('login');
@@ -59,12 +59,12 @@ Route::get('/dashboard/profile', function () {
     return view('./dashboard/admin_profile');
 })->name('dashboard_admin_profile');
 // .
-// 
+//
 // .
 
 
 // .
-// Map_course 
+// Map_course
 // .
 Route::get('/courses', function () {
     return view('courses/coursepage');
@@ -99,7 +99,7 @@ Route::get('/page3', function () {
     return view('courses/page3');
 })->name('page3');
 // .
-// 
+//
 // .
 // route::get('/dbconn', function () {
 //     return view('dbconn');
